@@ -45,7 +45,12 @@ workspace.__THINGS.__INSTANCE_CONTAINER.Active.Backrooms.GeneratedBackrooms.Chil
 end)
 
 print("Initially Found x"..tostring(Counter), "RandomRewards")
-
+vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+    vu:Button2Down(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
+    wait(1)
+    vu:Button2Up(Vector2.new(0, 0), workspace.CurrentCamera.CFrame)
+end)
 while next(Rooms) do task.wait()
     for _,room in Rooms do
         local Reward = room:FindFirstChild("RandomReward")
@@ -59,9 +64,6 @@ while next(Rooms) do task.wait()
             Claimed = Claimed + 1
             print("Claimed "..tostring(Claimed).."x Rewards in "..tostring(tick() - start).."s, in serv for "..tostring(tick() - Exec).."s")
             Rooms[UID] = nil
-            game:GetService("Players").LocalPlayer.Idled:connect(function()
-                game:GetService("VirtualUser"):ClickButton2(Vector2.new())
-            end)
         end
     end
 end
