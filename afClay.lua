@@ -16,6 +16,7 @@ getgenv().Config = {
     ["WebhookURL"] = "",
     ["AutoSave"] = true,
     ["BoostFPS"] = true,
-    ["AutoLeave"] = true
+    ["AutoLeave"] = true,
+	["Black Screen"] = true
 }
 loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()
