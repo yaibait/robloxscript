@@ -1,4 +1,4 @@
-getgenv().Key = "" 
+getgenv().Key = "0e7be42f40545e392fd6c03ca38e95ec9aeebdf63b89cea8096c3e7eca264910" 
 getgenv().EquipMacroTroop = true
 getgenv().ImportMacro = "https://cdn.discordapp.com/attachments/1243117652084260894/1246359369377906730/dwad.txt?ex=6660b75d&is=665f65dd&hm=4d75ce9174d528d800af83be032d0b1b8b865e7a2c27c240d03d3e3eeb748077&"
 getgenv().Config = {
