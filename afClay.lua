@@ -13,10 +13,10 @@ getgenv().Config = {
     ["SelectMacro"] = "dwad",
     ["AutoRejoin"] = true,
     ["PlayMacro"] = true,
-    ["WebhookURL"] = "",
+    ["WebhookURL"] = "https://discord.com/api/webhooks/1248109008125034549/M5k9C2ARhGfxOxMD8OaR48H4gUH0ScDjSvV9OEb_wnP9MPmT6PKo0-sg4wuUCj1uu2Ff",
     ["AutoSave"] = true,
     ["BoostFPS"] = true,
     ["AutoLeave"] = true,
-	["Black Screen"] = true
+    ["Black Screen"] = true
 }
 loadstring(game:HttpGet("https://nousigi.com/loader.lua"))()
