@@ -4,7 +4,11 @@ repeat task.wait() until game.Players.LocalPlayer
 repeat task.wait() until game.Players.LocalPlayer:FindFirstChild("PlayerGui")
 repeat task.wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("Main");
 _G.Team = "Pirate" -- Marine / Pirate
-
+_G.WebHook = {
+    ["Enabled"] = true, -- เปิดการใช้งาน
+    ["Url"] = "https://binhmmo.com/webhookmaru/bloxfruit.php", -- ลิ้งค์เว็บฮุก
+    ["Delay"] = 60 -- วินาที
+}
 _G.MainSettings = {
         ["EnabledHOP"] = true, -- เปิด HOP ( มันไม่มีอยู่ละใส่มาเท่ๆ )
         ['FPSBOOST'] = true, -- ภาพกาก
